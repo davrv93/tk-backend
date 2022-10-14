@@ -7,7 +7,7 @@ from flask_cors import CORS, cross_origin
 
 
 app = Flask(__name__)
-cors =  CORS(app, origins=["http://198.199.78.59:5000", "https://example.com"])
+#cors =  CORS(app, origins=["http://198.199.78.59:5000", "https://example.com"])
 
 
 @app.route('/')
@@ -15,7 +15,7 @@ def hello():
     return 'Hello, World!'
 
 @app.route('/api/generate', methods=['POST'])
-@cross_origin(origins=["http://198.199.78.59:5000", "https://example.com"])
+#@cross_origin(origins=["http://198.199.78.59:5000", "https://example.com"])
 def generate():
     data = request.json
     filename='voice.mp3'
