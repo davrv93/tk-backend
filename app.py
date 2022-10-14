@@ -51,8 +51,6 @@ def generate():
 
     b64d = base64.b64decode(vstr)
     
-    with open(filename, "wb") as out:
-        out.write(b64d)
 
     output_data = {
         "status": msg.capitalize(),
