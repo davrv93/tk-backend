@@ -1,5 +1,4 @@
-from msvcrt import kbhit
-from multiprocessing.util import ForkAwareLocal
+
 from flask import Flask
 import requests, base64, random, argparse, os, playsound, time, re, textwrap
 from enums import voices
